@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/btn_share_wechat_moments"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/margin_10"
+        android:drawableTop="@drawable/btn_share_wechat_moments"
+        android:gravity="center"
+        android:text="@string/share_wechat_moments"
+        android:textColor="@color/gray_4b"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintRight_toLeftOf="@+id/btn_share_wechat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/btn_share_wechat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/margin_10"
+        android:drawableTop="@drawable/btn_share_wechat"
+        android:gravity="center"
+        android:text="@string/share_wechat"
+        android:textColor="@color/gray_4b"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/btn_share_wechat_moments"
+        app:layout_constraintRight_toLeftOf="@+id/btn_share_weibo"/>
+
+    <TextView
+        android:id="@+id/btn_share_weibo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/margin_10"
+        android:drawableTop="@drawable/btn_share_weibo"
+        android:gravity="center"
+        android:text="@string/share_weibo"
+        android:textColor="@color/gray_4b"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/btn_share_wechat"
+        app:layout_constraintRight_toLeftOf="@+id/btn_share_qq"/>
+
+    <TextView
+        android:id="@+id/btn_share_qq"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/margin_10"
+        android:drawableTop="@drawable/btn_share_qq"
+        android:gravity="center"
+        android:text="@string/share_qq"
+        android:textColor="@color/gray_4b"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/btn_share_weibo"/>
+
+
+</android.support.constraint.ConstraintLayout>
