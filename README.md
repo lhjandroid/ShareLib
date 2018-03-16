@@ -3,13 +3,14 @@
 
 1.接入工程
 在主工程的build.gradle 中添加maven仓库地址
-maven { url "https://dl.bintray.com/thelasterstar/maven/" } // 主要针对微博分享sdk
+
+```maven { url "https://dl.bintray.com/thelasterstar/maven/" }``` // 主要针对微博分享sdk
 并添加sharelib依赖
 2.初始化分享sdk(配置分享sdk key值
 // 初始化分享sdk各个平台的注册key值
-ShareManager.initWxShareSdk("wxappid");
-ShareManager.initSinaSdk("新浪AppId","重定向地址","scrop");
-ShareManager.initQqSdk("qqAppId","分享成功后返回按钮的名称");
+```ShareManager.initWxShareSdk("wxappid");```
+```ShareManager.initSinaSdk("新浪AppId","重定向地址","scrop");```
+```ShareManager.initQqSdk("qqAppId","分享成功后返回按钮的名称");```
 
 3.构造分享平台及数据数据
 // 构建分享平台数据
